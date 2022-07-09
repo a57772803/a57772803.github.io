@@ -1,0 +1,215 @@
+﻿body {
+}
+
+body, html {
+    height: 100%;
+    font-family: 'noto', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    
+}
+
+#body-row {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*   background-color:#eaf2f9;*/
+    
+}
+
+.background {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.navbar {
+    height: 60px;
+}
+
+.sidebarPopup {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    height: 100%;
+    border: solid 1px red;
+    z-index: 99;
+    display: none;
+}
+
+#sidebar-container {
+    min-height: calc(100vh - 60px);
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: 230px;
+}
+
+.sidebar-collapsed {
+    width: 60px !important;
+}
+
+/* Separators */
+.sidebar-separator-title {
+    background-color: #333;
+    height: 35px;
+}
+
+.sidebar-separator {
+    background-color: #333;
+    height: 25px;
+}
+
+.logo-separator {
+    background-color: #333;
+    height: 60px;
+}
+
+
+
+.dataWrap {
+    height: calc(100% - 40px);
+}
+
+.dataNavbar {
+    height: 40px;
+}
+
+.shadow {
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.rb-1 {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 12px;
+    padding-right: 60px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .rb-1.small {
+        padding-left: 40px !important;
+        padding-right: 10px !important;
+    }
+
+
+    /* Hide the browser's default radio button */
+    .rb-1 input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 32px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: solid 1px #bbb;
+}
+
+/* On mouse-over, add a grey background color */
+.rb-1:hover input ~ .checkmark {
+    background-color: #efefef;
+}
+
+/* When the radio button is checked, add a blue background */
+.rb-1 input:checked ~ .checkmark {
+    background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.rb-1 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.rb-1 .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #000;
+}
+.navQuestions {
+    
+
+}
+
+.navQuestionsIcon {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ececec;
+    display: inline-block;
+    background-color: transparent;
+    color: #666;
+    margin: 1px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+    .navQuestionsIcon.active {
+        background-color: cornflowerblue;
+        color: white;
+    }
+
+.examSubject {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 0px #ececec;
+}
+
+.brand {
+    padding-top:50px;
+}
+
+.smallBrand {
+    padding-top:10px;
+}
+.smallIcon {    
+    width: 36px;
+    content: url('/Images/client/logo-32.png');
+    
+}
+
+.btn-wide {
+    padding:10px 40px;
+    
+}
+ 

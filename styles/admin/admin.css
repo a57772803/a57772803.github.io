@@ -1,0 +1,116 @@
+﻿html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#adminMain{
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+.paggingWrap {
+    display: none;
+}
+
+.customDataWrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: dashed 0px red;
+    display: none;
+}
+
+.tdFunction {
+    min-width: 140px;
+}
+
+.listDataWrap {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px);
+    border: dashed 0px red;
+    display: none;
+}
+
+.listDataTool {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    border: solid 0px blue;
+    padding: 5px;
+}
+
+.listDataScroll {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    overflow-y: auto;
+    border: solid 0px red;
+    padding: 10px;
+}
+
+.listData tr:hover {
+    background-color: #e3f2e4 !important;
+}
+
+.detailDataWrap {
+    display: none;
+}
+
+.detailDataToolbar {
+    position: absolute;
+    border: solid 0px red;
+    margin: 0 auto;
+    left: 50%;
+    padding-top: 8px;
+    transform: translate(-50%, 0%);
+    z-index: 1000;
+}
+
+
+.detailData .form-group {
+    margin-bottom: 0.5rem !important;
+}
+
+
+.shadow {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.rootMenu {
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.itemMenuWrap {
+    font-size: 0.9rem;
+    padding: 4px 0 4px 40px;
+    font-weight: bold;
+}
+
+.subMenuWrap .itemMenuWrap {
+    padding: 4px 0 4px 30px;
+    font-weight: bold;
+}
+
+.subMenu {
+    padding-left: 30px;
+}
+
+
+
+/* overwrite*/
+.ui-widget-header {
+    background-color: white;
+    border: 0px;
+    border-bottom: solid 1px #e9e9e9;
+}
+
+.ui-widget-content {
+    border: 0px !important;
+}

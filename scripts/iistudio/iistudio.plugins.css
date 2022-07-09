@@ -1,0 +1,214 @@
+﻿
+
+.debug-r {
+    border: solid 2px red;
+}
+
+.debug-g {
+    border: solid 2px green;
+}
+
+.debug-b {
+    border: solid 2px black;
+}
+
+/*grid start*/
+.puregrid {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0px; /*border: 1px solid #cce2cb;*/
+    border: 0px solid #efefef;
+    margin-top: 5px;
+}
+
+    .puregrid .row {
+        margin: 0px !important;
+        padding: 0px !important;
+        align-items: center;
+        padding: 5px;
+        border: solid 1px #ececec;
+       
+    }
+
+    .puregrid.no-border .row {
+        border: solid 0px !important;
+    }
+
+    .puregrid .th .col {
+        border: 0px;
+        border-bottom: solid 1px #ececec;
+    }
+
+    .puregrid.no-border .th .col {
+        border: 0px;
+        border-bottom: solid 0px;
+    }
+
+    .puregrid .col {
+        padding: 3px 5px;
+        margin: 0px;
+    }
+
+    .puregrid .row:not(.th) .col:not(:last-child) {
+        border-right-width: 0;
+        border-right: solid 1px #ececec;
+    }
+
+    .puregrid.no-border .row:not(.th) .col:not(:last-child) {
+        border-right-width: 0;
+        border-right: solid 0px red !important;
+    }
+
+    .puregrid .row:not(:last-child) .col {
+        border-bottom-width: 0;
+    }
+
+    .puregrid .row:not(.th):hover {
+        background-color: #cff5ff !important;
+    }
+
+    .puregrid .row:not(.th):nth-child(odd) {
+        background-color: #f5f5f5;
+    }
+
+    .puregrid .th {
+        font-weight: bold;
+        color: #5ba0d0;
+        border-bottom: solid 0px #cce2cb;
+    }
+        .puregrid .th .col {
+            padding: 10px;
+            border-bottom: 1px solid #cce2cb;
+        }
+        .puregrid.no-border .th .col {
+            padding: 10px;
+            border-bottom: 0px solid !important;
+        }
+
+    .puregrid input[type=text] {
+        padding: 0px;
+        margin: 0px;
+        padding: 10px;
+        border: 0px !important;
+        background-color: transparent;
+    }
+
+    .puregrid a {
+        margin: 0px;
+        padding: 10px;
+        border: 0px !important;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .puregrid select {
+        padding: 0px;
+        margin: 0px;
+        border: 0px !important;
+        background-color: transparent;
+    }
+
+    .puregrid input[type="text"], .tbData input[type="password"], .tbData textarea {
+        border: solid 1px #aaa;
+        width: 100%;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+/*grid end*/
+
+
+
+.detailTable {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0px; /*border: 1px solid #cce2cb;*/
+    border: 0px solid #efefef;
+    margin-top: 5px;
+}
+
+    .detailTable input[type=text]:hover {
+        background-color: #e4f3e4 !important;
+    }
+
+    .detailTable .head {
+        display: table-row;
+        font-weight: bold;
+        color: #5ba0d0;
+        border-bottom: solid 0px #cce2cb;
+        padding: 0px;
+    }
+
+        .detailTable .head .col {
+            display: table-cell;
+            padding: 5px;
+            border: 1px solid #cce2cb;
+        }
+
+    .detailTable .th {
+        display: table-cell;
+    }
+
+    .detailTable .rowTh {
+        display: table-row;
+        font-weight: bold;
+        color: #5ba0d0;
+    }
+
+        .detailTable .rowTh .col {
+            display: table-cell;
+            padding: 5px;
+            width: auto !important;
+        }
+
+    .detailTable .row {
+        display: table-row;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .detailTable .col {
+        display: table-cell;
+        padding: 0px;
+        border: 0px;
+        margin: 0px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: auto !important;
+    }
+
+    .detailTable input[type=text] {
+        padding: 0px;
+        margin: 0px;
+        padding: 8px;
+        border: 0px !important;
+    }
+
+    .detailTable input[type=button] {
+        padding: 0px;
+        margin: 0px;
+        padding: 0px;
+        padding: 3px 10px;
+    }
+
+    .detailTable input[type="text"], .tbData input[type="password"], .tbData textarea {
+        border: solid 1px #aaa;
+        width: 100%;
+        margin: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+.center {
+    text-align: center;
+}

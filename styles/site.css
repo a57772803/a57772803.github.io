@@ -1,0 +1,902 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'noto', sans-serif;
+    font-style: normal;
+    /*  overflow: hidden; Hide scrollbars */
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+#bodyRoot a {
+    text-decoration: none !important;
+}
+
+    #bodyRoot a:hover {
+        text-decoration: underline !important;
+    }
+
+@font-face {
+    font-family: "noto";
+    src: url('/fonts/NotoSansTC-Regular.otf');
+}
+
+@font-face {
+    font-family: "noto-light";
+    src: url('/fonts/NotoSansTC-Light.otf');
+}
+
+@font-face {
+    font-family: "noto-bold";
+    src: url('/fonts/NotoSansTC-bold.otf');
+}
+
+
+
+.fly-container {
+    margin-top: 130px;
+    flex: 1 0 auto;
+    overflow: hidden;
+}
+
+.scrollable-content {
+    height: 100%;
+    border: solid 1px red;
+    overflow: auto;
+    /* for Firefox */
+    min-height: 0;
+}
+
+img {
+    max-width: 100% !important;
+}
+
+
+#sidebar {
+    height: 100%;
+    max-height: 100%;
+}
+
+    #sidebar.expend {
+        width: 230px;
+    }
+
+
+    #sidebar.bg-blue .list-group-item {
+        color: white;
+        background-color: transparent;
+    }
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: 230px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+    a:hover {
+        color: #333;
+    }
+
+.debug-r {
+    border: solid 2px red;
+}
+
+.debug-g {
+    border: solid 2px green;
+}
+
+.debug-b {
+    border: solid 2px black;
+}
+
+.scrollable {
+    height: 100% !important;
+    overflow-y: auto !important;
+    max-height: 100% !important;
+}
+
+
+/* exam css */
+#adminMain {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*   background-color:#eaf2f9;*/
+}
+
+
+.sidebarPopup {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    height: 100%;
+    border: solid 1px red;
+    z-index: 99;
+    display: none;
+}
+
+#sidebar-container {
+    min-height: calc(100vh - 60px);
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: 230px !important;
+}
+
+.sidebar-collapsed {
+    width: 60px !important;
+    min-width: 60px !important;
+}
+
+/* Separators */
+.sidebar-separator-title {
+    background-color: #333;
+    height: 35px;
+}
+
+.sidebar-separator {
+    background-color: #333;
+    height: 25px;
+}
+
+.logo-separator {
+    background-color: #333;
+    height: 60px;
+}
+
+
+.shadow {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.shadow-r {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.rb-1 {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 12px;
+    padding-right: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .rb-1.small {
+        padding-left: 40px !important;
+        padding-right: 10px !important;
+    }
+
+
+    /* Hide the browser's default radio button */
+    .rb-1 input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: solid 1px #666;
+}
+
+/* On mouse-over, add a grey background color */
+.rb-1:hover input ~ .checkmark {
+    background-color: #efefef;
+}
+
+/* When the radio button is checked, add a blue background */
+.rb-1 input:checked ~ .checkmark {
+    background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.rb-1 input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.rb-1 .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #000;
+}
+
+
+
+.navQuestionsIcon {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: solid 1px #ececec;
+    display: inline-block;
+    background-color: transparent;
+    color: #666;
+    margin: 1px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+    .navQuestionsIcon.active {
+        background: #00B5D4;
+        color: white;
+    }
+
+.examSubject {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 0px #ececec;
+}
+
+
+.smallBrand {
+    padding-top: 10px;
+}
+
+.smallIcon {
+    width: 36px;
+    content: url('/Images/client/logo-32.png');
+}
+
+.btn-wide {
+    padding: 10px 40px;
+}
+
+
+/*web pos site.css start*/
+@font-face {
+    font-family: "noto";
+    src: url('/fonts/NotoSansTC-Regular.otf');
+}
+
+@font-face {
+    font-family: "noto-light";
+    src: url('/fonts/NotoSansTC-Light.otf');
+}
+
+@font-face {
+    font-family: "noto-bold";
+    src: url('/fonts/NotoSansTC-bold.otf');
+}
+
+
+@font-face {
+    font-family: "nunito";
+    src: url('/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: "nunito-light";
+    src: url('/fonts/Nunito-Light.ttf');
+}
+
+@font-face {
+    font-family: "nunito-bold";
+    src: url('/fonts/Nunito-Bold.ttf');
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'noto-light';
+    color: #8e9399;
+}
+
+
+select:required:invalid {
+    color: #8e9399;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+
+.debug-r {
+    border: solid 3px red !important;
+}
+
+.debug-g {
+    border: solid 3px green !important;
+}
+
+.debug-b {
+    border: solid 3px black !important;
+}
+
+
+.noto-light {
+    font-family: 'noto-light';
+}
+
+.workarea {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 17px;
+}
+
+#posMaster .btn {
+    font-size: 20px;
+}
+
+.workarea input[type=text] {
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.timePanel {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 300px;
+    height: 150px;
+    color: white;
+    font-size: 30px;
+}
+
+
+.statusbar {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 4%;
+    background-color: #ececec;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px #9c9c9c;
+    padding: 10px;
+    min-height: 150px;
+}
+
+    textarea:focus, input:focus {
+        outline: none;
+    }
+
+body, html {
+    height: 100%;
+    font-family: 'noto-light', sans-serif;
+    font-style: normal;
+    /* overflow: hidden; */
+    overflow: auto;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+
+.btnToolItem {
+    border-radius: 8px;
+    color: white;
+    padding: 5px;
+    border: 0px;
+    height: 65px;
+    font-size: 15px;
+    width: 65px;
+    max-width: 65px;
+}
+
+.panelModify {
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+}
+
+    .panelModify .btn {
+        margin: 2px;
+    }
+
+.panelGrid {
+    margin: 0px 10px;
+    background-color: white;
+    overflow: auto;
+}
+
+.labelHead {
+    font-size: 41px;
+    margin: 20px 0;
+}
+
+
+.labelTitle {
+    font-size: 24px;
+    color: #1b2733;
+    margin: 20px 0;
+}
+
+
+.btn-number {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(106,106,107,1) 49%, rgba(135,136,136,1) 100%);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    border-bottom: 0px;
+}
+
+.btn-function {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(106,106,107,1) 49%, rgba(135,136,136,1) 100%);
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    border-bottom: 0px;
+}
+
+.btnPayment {
+    height: 55px;
+    font-size: 20px;
+    width: 250px;
+    color: white;
+    background-color: orange;
+}
+
+.btn-answer {
+    background-color: #64796E;
+    color: white;
+    padding: 10px 40px;
+    font-size: 15px;
+}
+
+.btn-answer-w {
+    border: solid 1px #64796E;
+    background-color: white;
+    padding: 10px 40px;
+    font-size: 15px;
+}
+
+.btn-answer-d {
+    background-color: #64796E;
+    padding: 10px 40px;
+    font-size: 15px;
+    opacity: 0.5;
+    color: white;
+}
+
+
+
+
+.panelMonitor {
+    height: 90px;
+    color: white;
+}
+
+
+.panelMaterialType {
+    height: 200px;
+    overflow: auto;
+}
+
+.scrollable {
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+
+.btn-materialType {
+    background: rgb(241,140,47);
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    padding: 0px;
+    color: white;
+    font-size: 22px;
+    border-bottom: 0px;
+    margin: 3px 0 0 3px;
+    overflow: hidden;
+}
+
+    .btn-materialType.actived {
+        background: rgb(207,86,30);
+    }
+
+.btn-material {
+    background: rgb(0,120,215);
+    width: 140px;
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+    padding: 0px;
+    color: white;
+    font-size: 20px;
+    border-bottom: 0px;
+    margin: 5px 0 0 5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 22px;
+}
+
+.btn-paymentItem {
+    background-color: #eee;
+    color: black;
+    font-size: 22px;
+    min-width: 100px;
+    height: 60px;
+    padding: 0px;
+    line-height: 60px;
+    padding: 0 10px;
+    white-space: normal;
+}
+
+.btn-dollarType {
+    background-color: #999;
+    color: black;
+    font-size: 22px;
+    width: 100px;
+    height: 60px;
+    padding: 0px;
+    line-height: 60px;
+    border: solid 1px #ececec;
+    color: white;
+}
+
+
+
+.btn.active {
+    background-color: rgba(0,120,215,1) !important;
+    color: white;
+}
+
+
+
+.btn-number-w {
+    background-color: #999;
+    color: white;
+    font-size: 28px !important;
+}
+
+#panelMaterial {
+    overflow: auto;
+    height: 100%;
+}
+
+#salesGrid {
+    color: black;
+    width: 100%;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.text-1 {
+    font-size: 36px !important;
+}
+
+.text-2 {
+    font-size: 24px !important;
+}
+
+.text-3 {
+    font-size: 17px !important;
+}
+
+.text-small {
+    font-size: 12px !important;
+}
+
+.dialog-header {
+    color: white;
+    background-color: #666;
+}
+
+.dialog-body {
+    background-color: #fcfcfc;
+}
+
+.lbIcon {
+    background: rgb(201,99,28);
+    background: linear-gradient(0deg, rgba(201,99,28,1) 0%, rgba(162,72,28,1) 49%, rgba(124,48,27,1) 100%);
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.ui-keyboard {
+    left: 0px !important;
+    top: 0px !important;
+    position: relative !important;
+    border: 0px !important;
+}
+
+
+
+#mdInvoiceDonation .ui-keyboard {
+    position: relative !important;
+    top: 0px !important;
+    margin-top: 30px;
+}
+
+
+.bg-blue {
+    background-color: #308bdb;
+    color: white;
+}
+
+.bg-green {
+    background-color: #009944;
+    color: white;
+}
+
+.text-blue {
+    color: #308bdb;
+}
+
+.text-exam {
+    font-family: "noto";
+    font-size: 18px !important;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.text-examTitle {
+    font-size: 30px !important;
+    font-family: "noto";
+    font-weight: 400;
+}
+
+.text-questionNumber {
+    font-size: 20px !important;
+    font-family: "noto";
+    font-weight: 700;
+}
+
+
+.text-examSubTitle {
+    font-size: 30px !important;
+    font-family: "noto";
+    font-weight: 400;
+}
+
+.imageWrap {
+    width: 100%;
+    max-width: 100% !important;
+    overflow-x: auto;
+}
+
+    .imageWrap img {
+        max-width: 690px !important;
+    }
+
+.background {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /*background-image: url('/Images/backgroundgreen1.jpg');*/
+    background-image: url('/Images/background/AAGOFg6.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-admin {
+    background-image: url('/Images/background/AAGOyAT.jfif') !important;
+}
+
+.btnLogin {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #2F7BB1;
+    color: white;
+    font-size: 24px;
+    border-radius: 30px;
+    border: 0px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.background1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-position: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('/Images/background/fd2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    color: white;
+}
+
+.indexMain {
+    height: calc(100% - 93px);
+    margin-top: 93px;
+    overflow-y: auto;
+}
+
+.indexWrap {
+    min-height: calc(100% - 93px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo600 {
+    background-image: url('/Images/client/logo600.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+
+.errorAnswer {
+    border: solid 1px #ececec;
+    width: 25px;
+    text-align: center;
+    margin: 2px;
+}
+
+.menuActive {
+    background-color: #1B4100 !important;
+    color: white !important;
+    border-radius: 0px !important;
+}
+
+@media screen and (max-width:768px) {
+    #questionNo {
+        margin-top: 10px !important;
+        font-size: 1rem !important;
+        margin-bottom: 0px !important;
+    }
+
+    #question {
+        margin-top: 10px !important;
+        font-size: 1rem !important;
+    }
+
+    .btn-answer {
+        padding: 10px 19px !important;
+    }
+
+    .btn-answer-w {
+        padding: 10px 19px !important;
+    }
+
+    .btn-answer-d {
+        padding: 10px 10px !important;
+    }
+
+
+    #answers {
+        margin-top: 20px !important;
+    }
+
+    #testToolbar {
+        margin-bottom: 10px !important;
+    }
+
+    .testConditionArea {
+        font-size: 1rem !important;
+    }
+
+    .rb-1 {
+        padding-left: 35px;
+        margin-bottom: 10px;
+        padding-right: 30px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+    .sm-left {
+        text-align: left !important;
+    }
+
+
+    .sidebar-expanded {
+        width: 300px !important;
+        min-width: 300px !important;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .loginPanel {
+        padding: 30px 20px !important;
+    }
+
+    .text-examTitle {
+        font-size: 24px !important;
+    }
+
+    .text-examSubTitle {
+        font-size: 18px !important;
+    }
+
+    .navQuestionsIcon {
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        border: solid 1px #ececec;
+        display: inline-block;
+        background-color: transparent;
+        color: #666;
+        font-size: 9px;
+        line-height: 16px;
+    }
+
+    .puregrid, .puregrid input, .puregrid a {
+        font-size: 15px !important;
+        font-weight: 400 !important;
+        font-family: 'noto' !important;
+    }
+
+    #errorPanel {
+        font-size: 1rem !important;
+        padding: 30px !important;
+    }
+
+    #messagePanel {
+        font-size: 1rem !important;
+        padding: 30px !important;
+    }
+}
