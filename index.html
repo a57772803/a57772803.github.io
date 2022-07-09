@@ -73,7 +73,7 @@
               <button class="btn  nav-link nav-text" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 航空講堂
               </button>
-              <ul class="dropdown-menu  bg-transparent " aria-labelledby="dropdownMenuButton" id="navdropdown">
+              <ul class="dropdown-menu dropdown-menu-top" aria-labelledby="dropdownMenuButton" id="navdropdown">
                 <a class="dropdown-item dropdown-text text-center" href="https://flyadvisor.lodestar.site/programs">線上課程</a>
                 <a class="dropdown-item dropdown-text text-center" href="https://flyadvisor.lodestar.site/blog">精選文章</a>
                 <a class="dropdown-item dropdown-text text-center" href="https://flyadvisor.lodestar.site/merchandises">飛行市集</a>
@@ -280,7 +280,7 @@
         $('#navbar_top').removeClass("bg-transparent");
         $('#navbar_top').addClass("nav-color");
 
-        $('#navdropdown').removeClass("bg-transparent");
+        $('#navdropdown').removeClass("dropdown-menu-top");
         // remove padding top from body
         $('body').css('padding-top', '0');
       }
@@ -288,7 +288,7 @@
         $('#navbar_top').removeClass("nav-color");
         $('#navbar_top').addClass("bg-transparent");
 
-        $('#navdropdown').addClass("bg-transparent");
+        $('#navdropdown').addClass("dropdown-menu-top");
         
         // remove padding top from body
         $('body').css('padding-top', '0');

@@ -60,6 +60,10 @@ ul>li {
     z-index: 2;
 }
 
+.nav-color-white {
+    background-color: white;
+}
+
 
   
   .dropdown>.dropdown-toggle:active {
@@ -73,6 +77,10 @@ ul>li {
     min-width: 100px;
     border-color:transparent;
   }
+
+  .dropdown-menu-white {
+    background-color: white !important;
+}
 
 
   .dropdown-text {
@@ -340,7 +348,7 @@ ul>li {
         /* identical to box height */
     }
     .dropdown-menu{
-        background-color: rgba(0,175,179,255);;
+        background-color: rgba(0,175,179,255);
         max-width: 120px;
         border-color:transparent;
         margin: 0.125rem 0px 0 ;
@@ -348,6 +356,15 @@ ul>li {
       .dropdown-item{
         padding: 0 0 0 0;
       }
+
+      .dropdown-menu-top
+      {background-color: white;
+
+      }
+      .dropdown-menu-top > a:hover {
+        color: rgba(0,175,179,255) !important;
+        background-color: #a3e6c1;
+    }
 
     br {
         display: none;
@@ -473,6 +490,7 @@ margin-bottom: 4px !important;
         display: block;
         
       }
+
 
 
 }
