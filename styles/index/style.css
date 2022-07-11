@@ -361,8 +361,10 @@ ul>li {
       {background-color: white;
 
       }
-      .dropdown-menu-top > a:hover {
+      .dropdown-menu-top > a {
         color: rgba(0,175,179,255) !important;
+    }
+    .dropdown-menu-top > a:hover{
         background-color: #a3e6c1;
     }
 
