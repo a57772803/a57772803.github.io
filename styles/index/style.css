@@ -347,6 +347,9 @@ ul>li {
         text-shadow:none;
         /* identical to box height */
     }
+    .dropdown-text:hover{
+        color:rgba(0,175,179,255) !important;
+    }
     .dropdown-menu{
         background-color: rgba(0,175,179,255);
         max-width: 120px;
